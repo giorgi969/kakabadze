@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: 'bpg_mrgvlovani_caps_2010';
+    src: local('bpg_mrgvlovani_caps_2010'), local('Riesling'), url('fonts/bpg_mrgvlovani_caps_2010.ttf') format('truetype');
+}
+
+a {
+    text-decoration: none;
+}
+header {
+    background-image:url('images/back3.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+.start {
+    align-self: center;
+    margin-left: 15%;
+    margin-right: auto;
+}
+
+.intro {
+    padding: 20px;
+    color: khaki;
+}
+.navigation {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    justify-content: right;
+    position: fixed;
+    z-index: 9999
+}
+nav {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+nav a {
+    padding: 10px;
+    color: khaki;
+    background-color: #2d2c2c;
+    font-family: sans-serif;
+}
+
+
+.about {
+    background-image:url('images/kakabadze.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    justify-content: center;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.me {
+    margin-right: 15%;
+    width: 30%;
+    text-align: left;
+    justify-content: flex-start;
+}
+.me h2 {
+    padding: 10px;
+    color: khaki;
+    display: inline-block;
+}
+
+.me p {
+    padding: 15px;
+    background-color: darkkhaki;
+    color: black;
+    max-height: 500px;
+    border-radius: 10px;
+}
+
+.start h1 {
+    font-family: 'bpg_mrgvlovani_caps_2010', Arial, sans-serif;
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+
+h2 {
+    font-family: 'bpg_mrgvlovani_caps_2010', Arial, sans-serif;
+}
+
+.portfolio {
+    height: 100vh;
+    background-color: darkkhaki;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.portfolio h2 {
+    padding: 10px;
+    margin: auto;
+}
+
+.arqitectura {
+    background-image: url("images/back4.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 50%;
+    justify-content: center;
+    color: khaki;
+    display: flex;
+    align-items: center;
+    flex: 50%;
+
+}
+
+.shemoqmedeba {
+    background-image: url("images/architecture.jpg"), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+}
+
+@media only screen and (max-width: 800px) {
+    .portfolio {
+        flex-direction:column;
+    }
+    .arqitectura {
+        width: 100%;
+        height: 500px;
+    }
+    .shemoqmedeba {
+        width: 100%;
+        height: 500px;
+    }
+    .about {
+        min-height: 100vh;
+    }
+
+    .me {
+        width: 80%;
+        height: auto;
+        justify-items: center;
+        margin-right: 20px;
+        align-items: center;
+    }
+
+}
+.contacts {
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+    background-color: khaki;
+}
+
+.socialicons {
+    width: 56px;
+    height: auto;
+    margin: 20px;
+}
+
+footer {
+    height: 20vh;
+    background-color: #2d2c2c;
+}
